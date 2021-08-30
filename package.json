@@ -1,5 +1,5 @@
 {
-	"name": "@palebludot/e11ty-test",
+	"name": "@palebludot/e11ty",
 	"version": "0.0.0",
 	"description": "Using 11ty to generate HTML emails",
 	"main": ".evelenty.js",
@@ -54,12 +54,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/palebludot/e11ty-test.git"
+		"url": "git+https://github.com/palebludot/e11ty.git"
 	},
 	"bugs": {
-		"url": "https://github.com/palebludot/e11ty-test/issues"
+		"url": "https://github.com/palebludot/e11ty/issues"
 	},
-	"homepage": "https://github.com/palebludot/e11ty-test#readme",
+	"homepage": "https://github.com/palebludot/e11ty#readme",
 	"publishConfig": {
 		"access": "restricted",
 		"registry": "https://npm.pkg.github.com"
