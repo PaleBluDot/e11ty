@@ -1,0 +1,20 @@
+# e11ty Changelog
+
+# [1.1.0](https://github.com/palebludot/e11ty-test/compare/v1.0.0...v1.1.0) (2021-08-30)
+
+
+### Features
+
+* add assets ([#2](https://github.com/palebludot/e11ty-test/issues/2)) ([7c15120](https://github.com/palebludot/e11ty-test/commit/7c151201cf4bdc0dc9f8601114a9071dd0e12353))
+
+# 1.0.0 (2021-08-30)
+
+
+### Bug Fixes
+
+* **build:** fix `a11y` errors ([#1](https://github.com/palebludot/e11ty-test/issues/1)) ([d2092cf](https://github.com/palebludot/e11ty-test/commit/d2092cf807740705e83715bb915f4868d33ee9c1))
+
+
+### Features
+
+* initial release ([3d80cff](https://github.com/palebludot/e11ty-test/commit/3d80cffed6d80489cfb21a18dd69e787b005af7a))
