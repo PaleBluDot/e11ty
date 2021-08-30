@@ -1,6 +1,6 @@
-<h1 style="text-align:center;"><strong>📧 e11ty 📧</strong></h1>
+<h1 align="center"><strong>📧 e11ty 📧</strong></h1>
 
-<div style="text-align:center;">
+<div align="center">
 <h3 style="margin-bottom:10px"><strong>Using 11ty to generate HTML emails</strong></h3>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1f887774-95e7-4069-978a-128f3337a18d/deploy-status)](https://app.netlify.com/sites/peaceful-banach-b29143/deploys) [![CodeFactor](https://www.codefactor.io/repository/github/palebludot/e11ty/badge)](https://www.codefactor.io/repository/github/palebludot/e11ty)
