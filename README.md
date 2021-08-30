@@ -9,9 +9,9 @@
 
 [Website](https://e11ty.netlify.app) | [License](LICENSE.md) | [Changelog](CHANGELOG.md) | [Contributions](https://github.com/PaleBluDot/.github/blob/main/.github/CONTRIBUTING.md)
 
-</div>
-
 `e11ty` is a starter kit for me putting together HTML email templates. Generate clean HTML code, but build with all the modern tools to make you hate `tables` just a little bit less.
+
+</div>
 
 ## ⚡ Highlights ⚡
 
