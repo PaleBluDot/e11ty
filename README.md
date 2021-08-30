@@ -1,8 +1,6 @@
-<center>
-	<h1><strong>📧 e11ty 📧</strong></h1>
-</center>
+<h1 style="text-align:center;"><strong>📧 e11ty 📧</strong></h1>
 
-<center>
+<div style="text-align:center;">
 <h3 style="margin-bottom:10px"><strong>Using 11ty to generate HTML emails</strong></h3>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1f887774-95e7-4069-978a-128f3337a18d/deploy-status)](https://app.netlify.com/sites/peaceful-banach-b29143/deploys) [![CodeFactor](https://www.codefactor.io/repository/github/palebludot/e11ty/badge)](https://www.codefactor.io/repository/github/palebludot/e11ty)
@@ -11,7 +9,7 @@
 
 [Website](https://e11ty.netlify.app) | [License](LICENSE.md) | [Changelog](CHANGELOG.md) | [Contributions](https://github.com/PaleBluDot/.github/blob/main/.github/CONTRIBUTING.md)
 
-</center>
+</div>
 
 `e11ty` is a starter kit for me putting together HTML email templates. Generate clean HTML code, but build with all the modern tools to make you hate `tables` just a little bit less.
 
