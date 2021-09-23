@@ -6,7 +6,7 @@
 			{
 				"releaseRules": [
 					{ "type": "docs", "release": "patch" },
-					{ "type": "refactor", "release": "patch" }
+					{ "type": "refactor", "release": "patch" },
 					{ "type": "revert", "release": "patch" }
 				]
 			}
