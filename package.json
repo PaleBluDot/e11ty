@@ -27,7 +27,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "lint-staged",
+			"pre-commit": "npx lint-staged",
 			"pre-commit-msg": "exec < /dev/tty && node_modules/.bin/cz --hook || true"
 		}
 	},
@@ -41,6 +41,7 @@
 	],
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
+		"commitizen": "^4.2.4",
 		"commitlint": "^11.0.0",
 		"cross-env": "^7.0.3",
 		"cspell": "^5.6.6",
