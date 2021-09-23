@@ -1,6 +1,6 @@
 {
 	"name": "@palebludot/e11ty",
-	"version": "0.0.0",
+	"version": "1.0.1",
 	"description": "Using 11ty to generate HTML emails",
 	"main": ".evelenty.js",
 	"author": "Pavel Sanchez <pavel@bluedot.dev>",
