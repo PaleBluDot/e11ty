@@ -12,6 +12,10 @@ const types = [
 		name: "🔩 chore:\t Doesn't modify src or test files",
 	},
 	{
+		value: "docs",
+		name: "📚 docs:\t Update or change to the documentation",
+	},
+	{
 		value: "build",
 		name: "🚀 build:\t Build system config or external dependencies",
 	},
@@ -25,7 +29,7 @@ const types = [
 	},
 ];
 
-const scopes = ["automation", "component", "config", "data", "docs", "layout", "styles"].map((name) => ({
+const scopes = ["automation", "component", "config", "data", "layout", "styles"].map((name) => ({
 	name,
 }));
 

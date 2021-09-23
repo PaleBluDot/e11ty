@@ -70,3 +70,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          GIT_AUTHOR_NAME: PaleBluDot
+          GIT_AUTHOR_EMAIL: 23495830+PaleBluDot@users.noreply.github.com
+          GIT_COMMITTER_NAME: PaleBluDot
+          GIT_COMMITTER_EMAIL: 23495830+PaleBluDot@users.noreply.github.com
