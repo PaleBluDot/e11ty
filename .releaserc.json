@@ -6,8 +6,8 @@
 			{
 				"releaseRules": [
 					{ "type": "docs", "release": "patch" },
-					{ "type": "chore", "release": "patch" },
-					{ "type": "style", "release": "patch" }
+					{ "type": "refactor", "release": "patch" }
+					{ "type": "revert", "release": "patch" },
 				]
 			}
 		],
@@ -23,7 +23,7 @@
 		[
 			"@semantic-release/git",
 			{
-				"message": "chore(release): 🏷️ v${nextRelease.version} [ci]\n\n${nextRelease.notes}"
+				"message": "chore(release): 🏷️ v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
 			}
 		]
 	]
