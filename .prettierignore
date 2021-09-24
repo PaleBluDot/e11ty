@@ -1,2 +1,4 @@
 # Ignore artifacts:
 # src
+postcss.config.js
+tailwind.config.js

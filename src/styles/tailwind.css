@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind colors;
+
+@layer utilities {
+	.primary {
+		color: #f3ef07;
+	}
+}

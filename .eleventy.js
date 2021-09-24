@@ -10,7 +10,8 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
 	eleventyConfig.addLayoutAlias("email-base", "layouts/email-base.njk");
-	eleventyConfig.addLayoutAlias("event", "layouts/event.njk");
+
+	// eleventyConfig.addPassthroughCopy({ "src/styles": "/" });
 
 	return {
 		htmlTemplateEngine: "njk",
