@@ -6,18 +6,21 @@
 	"author": "Pavel Sanchez <pavel@bluedot.dev>",
 	"license": "MIT",
 	"private": true,
+	"source": "src/website/index.html",
 	"scripts": {
-		"start": "npm-run-all clean --parallel dev tailwind:watch",
-		"dev": "npx @11ty/eleventy --serve",
+		"start": "npm-run-all clean -p dev:*",
+		"dev": "npx gulp dev",
+		"dev:11ty": "npx @11ty/eleventy --serve",
+		"dev:tailwind": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/tailwind.css -w",
+		"gulp": "npx gulp dev",
 		"clean": "rm -rf dist",
 		"tailwind": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/tailwind.css",
-		"tailwind:watch": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/tailwind.css -w",
 		"pa11y": "pa11y ./dist/",
 		"spellcheck": "npm cspell \"src/**\"",
 		"lint": "npm-run-all pa11y spellcheck",
 		"format": "npx prettier --write dist/**",
 		"commit": "git cz",
-		"build": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy && npm run tailwind"
+		"build": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy && npm run tailwind && npx gulp"
 	},
 	"config": {
 		"commitizen": {
@@ -49,6 +52,8 @@
 		"cross-env": "^7.0.3",
 		"cspell": "^5.11.0",
 		"cz-customizable": "^6.3.0",
+		"gulp": "^4.0.2",
+		"gulp-inline-css": "^4.0.0",
 		"husky": "^7.0.1",
 		"lint-staged": "^10.2.11",
 		"npm-run-all": "^4.1.5",

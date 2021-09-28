@@ -4,6 +4,10 @@ module.exports = {
 		mode: "all",
 		preserveHtmlElements: false,
 		content: ["./src/templates/*.html"],
+		options: {
+			keyframes: true,
+			fontFace: true,
+		},
 	},
 	darkMode: false, // or 'media' or 'class'
 	theme: {
