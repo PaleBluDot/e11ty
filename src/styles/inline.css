@@ -1,3 +1,7 @@
+.primary {
+	color: #f3ef07;
+}
+
 :root {
 	color-schemes: light dark;
 	supported-color-schemes: light dark;

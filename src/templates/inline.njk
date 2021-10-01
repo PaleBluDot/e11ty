@@ -1,0 +1,32 @@
+---
+title: inline
+layout: base
+---
+
+<head>
+	<title>HTML Email</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="color-scheme" content="light dark" />
+	<meta name="supported-color-schemes" content="light dark" />
+	<link rel="stylesheet" href="{{ '../inline.css' | url}}" />
+	<style>
+		:root {
+			color-schemes: light dark;
+			supported-color-schemes: light dark;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0 0 5px 0;
+		}
+	</style>
+</head>
+<body>
+	<main role="main" class="flex-initial">
+		<p class="primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, blanditiis!</p>
+	</main>
+</body>
