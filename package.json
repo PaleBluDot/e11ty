@@ -6,15 +6,11 @@
 	"author": "Pavel Sanchez <pavel@bluedot.dev>",
 	"license": "MIT",
 	"private": true,
-	"source": "src/website/index.html",
 	"scripts": {
-		"start": "npm-run-all clean -p dev:*",
-		"dev": "npx gulp dev",
+		"start": "npm-run-all clean -p dev:11ty dev:gulp -c",
+		"dev:gulp": "npx gulp dev",
 		"dev:11ty": "npx @11ty/eleventy --serve",
-		"dev:tailwind": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/tailwind.css -w",
-		"gulp": "npx gulp dev",
 		"clean": "rm -rf dist",
-		"tailwind": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/tailwind.css",
 		"pa11y": "pa11y ./dist/",
 		"spellcheck": "npm cspell \"src/**\"",
 		"lint": "npm-run-all pa11y spellcheck",
@@ -54,14 +50,17 @@
 		"cz-customizable": "^6.3.0",
 		"gulp": "^4.0.2",
 		"gulp-inline-css": "^4.0.0",
+		"gulp-purgecss": "^4.0.3",
 		"husky": "^7.0.1",
+		"juice": "^8.0.0",
 		"lint-staged": "^10.2.11",
+		"lodash": "^4.17.21",
 		"npm-run-all": "^4.1.5",
 		"pa11y": "^5.3.0",
-		"postcss": "^8.3.8",
+		"posthtml": "^0.16.5",
+		"posthtml-postcss-merge-longhand": "^1.0.4",
 		"prettier": "^2.4.1",
-		"semantic-release": "^17.4.7",
-		"tailwindcss": "^2.2.16"
+		"semantic-release": "^17.4.7"
 	},
 	"repository": "git+https://github.com/palebludot/e11ty.git"
 }
