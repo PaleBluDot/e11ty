@@ -41,6 +41,9 @@
 		"HTML",
 		"email"
 	],
+	"engines": {
+		"node": ">=16.0.0"
+	},
 	"devDependencies": {
 		"@11ty/eleventy": "^1.0.1",
 		"commitizen": "^1.0.4",
