@@ -1,5 +1,5 @@
 {
 	"layout": "email-base",
 	"tags": "templates",
-	"permalink": "./templates/{{ title | slug }}.html"
+	"permalink": "./templates/{{ title | slugify }}.html"
 }
