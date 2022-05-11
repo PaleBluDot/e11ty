@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - beta
 
 jobs:
   Test:
@@ -31,33 +32,40 @@ jobs:
 
   Publish:
     name: 🚀 Publish 🚀
-    runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version: [16]
+        os: [ubuntu-latest]
+
     needs: [Test]
     steps:
       - name: ⎔ Setup node
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          useLockFile: false
-        env:
-          HUSKY_SKIP_INSTALL: true
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: 🏗 Build
-        run: npm run build
+        run: npm run build --if-present
 
-      - uses: cycjimmy/semantic-release-action@v2
+      - name: 🚢 Release
+        uses: cycjimmy/semantic-release-action@v3
         with:
-          semantic_version: 17
+          semantic_version: 18
+          dry_run: true
           extra_plugins: |
-            @semantic-release/changelog@3.0.0
-            @semantic-release/git@9.0.0
-            @semantic-release/github@7.0.0
+            @semantic-release/changelog@6.0.1
+            @semantic-release/git@10.0.1
+            @semantic-release/github@8.0.4
           branches: |
             [
               'main',
